@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SmartMeterIntervalReadingV1",
+  "type": "object",
+  "required": ["schema_version", "event_id", "event_type", "event_ts_utc", "meter_id", "device_id", "service_point_id", "interval_start_utc", "interval_end_utc", "interval_minutes", "consumption_kwh", "quality_code", "tariff_code"],
+  "properties": {
+    "schema_version": {"const": "1.0"}, "event_id": {"type": "string"}, "event_type": {"const": "INTERVAL_READING"},
+    "event_ts_utc": {"type": "string", "format": "date-time"}, "meter_id": {"type": "string", "minLength": 1},
+    "device_id": {"type": "string", "minLength": 1}, "service_point_id": {"type": "string", "minLength": 1},
+    "service_point_type": {"enum": ["ELECTRIC", "WATER", "GAS"]}, "interval_start_utc": {"type": "string", "format": "date-time"},
+    "interval_end_utc": {"type": "string", "format": "date-time"}, "interval_minutes": {"const": 15},
+    "consumption_kwh": {"type": "number", "minimum": 0, "maximum": 1000}, "voltage_v": {"type": "number"},
+    "current_a": {"type": "number", "minimum": 0}, "power_factor": {"type": "number", "minimum": -1, "maximum": 1},
+    "temperature_c": {"type": "number"}, "quality_code": {"enum": ["ACTUAL", "ESTIMATED", "SUBSTITUTED", "SUSPECT"]},
+    "tariff_code": {"enum": ["OFF_PEAK", "SHOULDER", "PEAK"]}, "measurement_events": {"type": "array", "items": {"type": "string"}},
+    "device_events": {"type": "array", "items": {"type": "string"}}
+  }
+}
