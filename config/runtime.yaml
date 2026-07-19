@@ -1,0 +1,13 @@
+# Central runtime configuration for the AIDP notebooks.
+OCI_STREAM_ENDPOINT: https://cell-1.streaming.ap-hyderabad-1.oci.oraclecloud.com
+OCI_STREAM_OCID: ocid1.stream.oc1.ap-hyderabad-1.amaaaaaau6bxbdqaafv72eqqoktlxaidtkt33rfvsfxerhrj5g6i6xytinbq
+OCI_CONFIG_FILE: /Workspace/config/config
+OCI_PROFILE: DEFAULT
+AIDP_CATALOG: aidp_poc
+CONSUMER_GROUP: meter_bronze_consumer_v1
+OCI_STREAM_PARTITIONS: "0"
+LATE_ARRIVAL_HOURS: "48"
+METER_COUNT: "1000"
+INTERVAL_START_UTC: ""
+MODEL_VERSION: approved-v1
+MODEL_URI: /Workspace/models/smart_meter_next_kwh/approved-v1
