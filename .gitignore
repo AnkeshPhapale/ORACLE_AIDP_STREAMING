@@ -1,0 +1,17 @@
+# Python and notebook execution artefacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Secrets and OCI SDK credentials
+config/config
+config/*.pem
+config/*.key
+.env
+runtime.env
+
+# Local Spark / ML output
+spark-warehouse/
+mlruns/
+models/

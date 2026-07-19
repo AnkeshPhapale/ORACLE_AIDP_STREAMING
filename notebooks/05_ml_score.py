@@ -2,10 +2,11 @@
 from pyspark.sql import functions as F, Window
 from pyspark.ml import PipelineModel
 from src.settings import Settings
-settings = Settings.from_env(); spark.sql(f"USE {settings.database}")
+settings = Settings.from_env()
+silver_table, predictions_table = settings.table("silver", "interval_reading"), settings.table("ml", "meter_predictions")
 MODEL_VERSION = "approved-v1"; MODEL_URI = "/Workspace/models/smart_meter_next_kwh/approved-v1"
 model = PipelineModel.load(MODEL_URI)
-base = spark.table("silver_interval_reading").where("quality_code = 'ACTUAL'")
+base = spark.table(silver_table).where("quality_code = 'ACTUAL'")
 w = Window.partitionBy("meter_id").orderBy("interval_start_utc")
 latest = (base.select("meter_id", "interval_start_utc", "temperature_c", "voltage_v", "tariff_code")
  .join(base.select("meter_id", "interval_start_utc", "consumption_kwh"), ["meter_id", "interval_start_utc"])
@@ -16,4 +17,4 @@ latest = (base.select("meter_id", "interval_start_utc", "temperature_c", "voltag
  .where("lag_96_kwh IS NOT NULL").withColumn("rn", F.row_number().over(Window.partitionBy("meter_id").orderBy(F.col("interval_start_utc").desc()))).where("rn=1").drop("rn", "consumption_kwh"))
 scored = model.transform(latest).select(F.lit(MODEL_VERSION).alias("model_version"), "meter_id", "interval_start_utc", F.greatest(F.lit(0.0), F.col("prediction")).alias("prediction_kwh"), F.current_timestamp().alias("scored_at"))
 scored.createOrReplaceTempView("scored_batch")
-spark.sql("MERGE INTO ml_meter_predictions t USING scored_batch s ON t.model_version=s.model_version AND t.meter_id=s.meter_id AND t.interval_start_utc=s.interval_start_utc WHEN MATCHED THEN UPDATE SET * WHEN NOT MATCHED THEN INSERT *")
+spark.sql(f"MERGE INTO {predictions_table} t USING scored_batch s ON t.model_version=s.model_version AND t.meter_id=s.meter_id AND t.interval_start_utc=s.interval_start_utc WHEN MATCHED THEN UPDATE SET * WHEN NOT MATCHED THEN INSERT *")

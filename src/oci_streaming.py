@@ -4,6 +4,8 @@ import json, oci
 from src.settings import Settings
 
 def client(settings):
+    if not settings.config_file or not settings.stream_endpoint:
+        raise ValueError("OCI streaming settings are required: OCI_CONFIG_FILE and OCI_STREAM_ENDPOINT")
     return oci.streaming.StreamClient(oci.config.from_file(settings.config_file, settings.profile), service_endpoint=settings.stream_endpoint)
 
 def publish_events(stream_client, stream_ocid, events):

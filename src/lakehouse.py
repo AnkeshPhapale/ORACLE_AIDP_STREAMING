@@ -9,6 +9,19 @@ def valid_events(parsed_df):
     p = F.col("payload")
     reasons = F.concat_ws("; ",
         F.when(p.isNull(), F.lit("INVALID_JSON_OR_SCHEMA")),
+        F.when(
+            p.event_id.isNull()
+            | p.meter_id.isNull()
+            | p.device_id.isNull()
+            | p.service_point_id.isNull()
+            | p.interval_start_utc.isNull()
+            | p.interval_end_utc.isNull()
+            | p.interval_minutes.isNull()
+            | p.consumption_kwh.isNull()
+            | p.quality_code.isNull()
+            | p.tariff_code.isNull(),
+            F.lit("MISSING_REQUIRED_FIELD"),
+        ),
         F.when(p.event_type != "INTERVAL_READING", F.lit("UNSUPPORTED_EVENT_TYPE")),
         F.when(p.interval_minutes != 15, F.lit("INVALID_INTERVAL_MINUTES")),
         F.when((p.consumption_kwh < 0) | (p.consumption_kwh > 1000), F.lit("INVALID_CONSUMPTION")),
