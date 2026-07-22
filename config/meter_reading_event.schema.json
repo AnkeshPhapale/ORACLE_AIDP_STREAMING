@@ -1,18 +1,13 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "SmartMeterIntervalReadingV1",
+  "title": "SmartMeterIntervalReadingV2",
   "type": "object",
-  "required": ["schema_version", "event_id", "event_type", "event_ts_utc", "meter_id", "device_id", "service_point_id", "interval_start_utc", "interval_end_utc", "interval_minutes", "consumption_kwh", "quality_code", "tariff_code"],
+  "required": ["schema_version","event_id","event_type","event_ts_utc","meter_id","device_id","service_point_id","interval_start_utc","interval_end_utc","interval_minutes","consumption_kwh","demand_kw","quality_code","tariff_code","meter_status","region_code","feeder_id","transformer_id","customer_segment"],
   "properties": {
-    "schema_version": {"const": "1.0"}, "event_id": {"type": "string"}, "event_type": {"const": "INTERVAL_READING"},
-    "event_ts_utc": {"type": "string", "format": "date-time"}, "meter_id": {"type": "string", "minLength": 1},
-    "device_id": {"type": "string", "minLength": 1}, "service_point_id": {"type": "string", "minLength": 1},
-    "service_point_type": {"enum": ["ELECTRIC", "WATER", "GAS"]}, "interval_start_utc": {"type": "string", "format": "date-time"},
-    "interval_end_utc": {"type": "string", "format": "date-time"}, "interval_minutes": {"const": 15},
-    "consumption_kwh": {"type": "number", "minimum": 0, "maximum": 1000}, "voltage_v": {"type": "number"},
-    "current_a": {"type": "number", "minimum": 0}, "power_factor": {"type": "number", "minimum": -1, "maximum": 1},
-    "temperature_c": {"type": "number"}, "quality_code": {"enum": ["ACTUAL", "ESTIMATED", "SUBSTITUTED", "SUSPECT"]},
-    "tariff_code": {"enum": ["OFF_PEAK", "SHOULDER", "PEAK"]}, "measurement_events": {"type": "array", "items": {"type": "string"}},
-    "device_events": {"type": "array", "items": {"type": "string"}}
+    "schema_version":{"const":"2.0"},"event_id":{"type":"string"},"event_type":{"const":"INTERVAL_READING"},
+    "event_ts_utc":{"type":"string","format":"date-time"},"meter_id":{"type":"string"},"device_id":{"type":"string"},"service_point_id":{"type":"string"},
+    "service_point_type":{"const":"ELECTRIC"},"interval_start_utc":{"type":"string","format":"date-time"},"interval_end_utc":{"type":"string","format":"date-time"},"interval_minutes":{"const":15},
+    "consumption_kwh":{"type":"number","minimum":0},"demand_kw":{"type":"number","minimum":0},"voltage_v":{"type":"number"},"current_a":{"type":"number","minimum":0},"power_factor":{"type":"number","minimum":-1,"maximum":1},"frequency_hz":{"type":"number"},"temperature_c":{"type":"number"},"humidity_pct":{"type":"number","minimum":0,"maximum":100},
+    "quality_code":{"enum":["ACTUAL","ESTIMATED","SUBSTITUTED","SUSPECT"]},"tariff_code":{"enum":["OFF_PEAK","SHOULDER","PEAK"]},"meter_status":{"enum":["ACTIVE","INACTIVE","FAULT"]},"firmware_version":{"type":"string"},"region_code":{"type":"string"},"feeder_id":{"type":"string"},"transformer_id":{"type":"string"},"customer_segment":{"enum":["RESIDENTIAL","SMALL_BUSINESS","INDUSTRIAL"]},"outage_minutes":{"type":"integer","minimum":0},"tamper_flag":{"type":"boolean"},"measurement_events":{"type":"array","items":{"type":"string"}},"device_events":{"type":"array","items":{"type":"string"}}
   }
 }

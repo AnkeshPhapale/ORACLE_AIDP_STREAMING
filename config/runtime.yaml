@@ -7,7 +7,7 @@ AIDP_CATALOG: aidp_poc
 CONSUMER_GROUP: meter_bronze_consumer_v1
 OCI_STREAM_PARTITIONS: "0"
 LATE_ARRIVAL_HOURS: "48"
-METER_COUNT: "1000"
+METER_COUNT: "10000"
 INTERVAL_START_UTC: ""
-MODEL_VERSION: approved-v1
-MODEL_URI: /Workspace/models/smart_meter_next_kwh/approved-v1
+MODEL_VERSION: candidate-v1
+MODEL_URI: ""
