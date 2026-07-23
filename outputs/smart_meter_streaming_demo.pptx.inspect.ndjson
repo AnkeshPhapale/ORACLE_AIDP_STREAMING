@@ -1,0 +1,185 @@
+{"kind":"deck","id":"pr/r0nydt","name":"Deck"}
+{"kind":"layout","layoutId":"1caa7eb3-495f-4681-af03-48b1a864ebff","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"455d9648-f849-41ca-9cf5-77ca63aecb3e","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/23xnzh","slide":1,"title":"Smart Meter Streaming","textShapes":7}
+{"kind":"textbox","id":"sh/7y1cbmt8","slide":1,"text":"Smart Meter Streaming\nIntelligence","textPreview":"Smart Meter Streaming | Intelligence","textChars":34,"textLines":2,"bbox":[58,112,650,170]}
+{"kind":"textbox","id":"sh/szad4rut","slide":1,"text":"From 15-minute readings to operational insight and next-interval demand forecasts","textPreview":"From 15-minute readings to operational insight and next-interval demand forecasts","textChars":81,"textLines":1,"bbox":[60,312,610,76]}
+{"kind":"shape","id":"sh/t0jedwbe","slide":1,"bbox":[760,110,390,410]}
+{"kind":"textbox","id":"sh/it8vyxcr","slide":1,"text":"10,000","textPreview":"10,000","textChars":6,"textLines":1,"bbox":[805,170,300,70]}
+{"kind":"textbox","id":"sh/juhc72tc","slide":1,"text":"smart meters in a live pipeline","textPreview":"smart meters in a live pipeline","textChars":31,"textLines":1,"bbox":[800,248,310,35]}
+{"kind":"shape","id":"sh/kvqd07ux","slide":1,"bbox":[815,325,275,0]}
+{"kind":"textbox","id":"sh/5wzu9cb2","slide":1,"text":"Bronze → Silver → Gold → ML","textPreview":"Bronze → Silver → Gold → ML","textChars":27,"textLines":1,"bbox":[805,355,300,50]}
+{"kind":"textbox","id":"sh/a58vuxcf","slide":1,"text":"Demo-ready reference architecture","textPreview":"Demo-ready reference architecture","textChars":33,"textLines":1,"bbox":[60,616,600,26]}
+{"kind":"textbox","id":"sh/b6hc32t0","slide":1,"text":"Oracle AIDP + OCI Streaming","textPreview":"Oracle AIDP + OCI Streaming","textChars":27,"textLines":1,"bbox":[56,675,1000,18]}
+{"kind":"notes","id":"nt/23xnzh","slide":1,"text":""}
+{"kind":"slide","id":"sl/5k5w9m","slide":2,"title":"SMART METER STREAMING","textShapes":9}
+{"kind":"textbox","id":"sh/ofi103mp","slide":2,"text":"SMART METER STREAMING","textPreview":"SMART METER STREAMING","textChars":21,"textLines":1,"bbox":[56,35,500,22]}
+{"kind":"textbox","id":"sh/ne907y54","slide":2,"text":"The operational challenge is not data collection—it is time to action","textPreview":"The operational challenge is not data collection—it is time to action","textChars":69,"textLines":1,"bbox":[56,70,1130,54]}
+{"kind":"textbox","id":"sh/mdgjyt4j","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1180,38,45,22]}
+{"kind":"shape","id":"sh/x4rid8n6","slide":2,"bbox":[56,140,1168,0]}
+{"kind":"shape","id":"sh/w3i143m1","slide":2,"bbox":[70,205,11,11]}
+{"kind":"textbox","id":"sh/b290by5g","slide":2,"text":"Interval data arrives continuously, but business teams see it too late.","textPreview":"Interval data arrives continuously, but business teams see it too late.","textChars":71,"textLines":1,"bbox":[94,198,1016,42]}
+{"kind":"shape","id":"sh/a10j2t4v","slide":2,"bbox":[70,259,11,11]}
+{"kind":"textbox","id":"sh/l8b2h83i","slide":2,"text":"Raw telemetry cannot be trusted until it is validated, deduplicated and contextualized.","textPreview":"Raw telemetry cannot be trusted until it is validated, deduplicated and contextualized.","textChars":87,"textLines":1,"bbox":[94,252,1016,42]}
+{"kind":"shape","id":"sh/k7218nmx","slide":2,"bbox":[70,313,11,11]}
+{"kind":"textbox","id":"sh/mtsbils3","slide":2,"text":"Demand, anomaly and outage decisions need a forward-looking view—not yesterday’s report.","textPreview":"Demand, anomaly and outage decisions need a forward-looking view—not yesterday’s report.","textChars":88,"textLines":1,"bbox":[94,306,1016,42]}
+{"kind":"shape","id":"sh/nulcrq9o","slide":2,"bbox":[760,465,410,120]}
+{"kind":"textbox","id":"sh/8vutkvq9","slide":2,"text":"The opportunity","textPreview":"The opportunity","textChars":15,"textLines":1,"bbox":[790,488,300,24]}
+{"kind":"textbox","id":"sh/9g3ut0ru","slide":2,"text":"Turn meter events into a trusted operational decision product.","textPreview":"Turn meter events into a trusted operational decision product.","textChars":62,"textLines":1,"bbox":[790,520,340,45]}
+{"kind":"textbox","id":"sh/ahcbm58z","slide":2,"text":"A streaming design makes each 15-minute interval actionable.","textPreview":"A streaming design makes each 15-minute interval actionable.","textChars":60,"textLines":1,"bbox":[56,675,1000,18]}
+{"kind":"notes","id":"nt/5k5w9m","slide":2,"text":""}
+{"kind":"slide","id":"sl/uq3cip","slide":3,"title":"SMART METER STREAMING","textShapes":20}
+{"kind":"textbox","id":"sh/pkf2t4ny","slide":3,"text":"SMART METER STREAMING","textPreview":"SMART METER STREAMING","textChars":21,"textLines":1,"bbox":[56,35,500,22]}
+{"kind":"textbox","id":"sh/2hojypo7","slide":3,"text":"One pipeline converts meter telemetry into governed operational intelligence","textPreview":"One pipeline converts meter telemetry into governed operational intelligence","textChars":76,"textLines":1,"bbox":[56,70,1130,54]}
+{"kind":"textbox","id":"sh/3ixkru5s","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1180,38,45,22]}
+{"kind":"shape","id":"sh/gf61wf61","slide":3,"bbox":[56,140,1168,0]}
+{"kind":"shape","id":"sh/1gf2pknm","slide":3,"bbox":[55,260,160,118]}
+{"kind":"textbox","id":"sh/et4jupov","slide":3,"text":"Meter fleet","textPreview":"Meter fleet","textChars":11,"textLines":1,"bbox":[69,278,132,24]}
+{"kind":"textbox","id":"sh/fudknu5g","slide":3,"text":"10,000 fixed meters","textPreview":"10,000 fixed meters","textChars":19,"textLines":1,"bbox":[67,315,136,38]}
+{"kind":"shape","id":"sh/0bql8j6l","slide":3,"bbox":[215,319,32,0]}
+{"kind":"shape","id":"sh/lcz21onq","slide":3,"bbox":[250,260,160,118]}
+{"kind":"textbox","id":"sh/hknq9cbu","slide":3,"text":"OCI Streaming","textPreview":"OCI Streaming","textChars":13,"textLines":1,"bbox":[264,278,132,24]}
+{"kind":"textbox","id":"sh/gje907a9","slide":3,"text":"durable event buffer","textPreview":"durable event buffer","textChars":20,"textLines":1,"bbox":[262,315,136,38]}
+{"kind":"shape","id":"sh/vi5872to","slide":3,"bbox":[410,319,32,0]}
+{"kind":"shape","id":"sh/uhwryxs3","slide":3,"bbox":[445,260,160,118]}
+{"kind":"textbox","id":"sh/twnq5sbi","slide":3,"text":"Bronze","textPreview":"Bronze","textChars":6,"textLines":1,"bbox":[459,278,132,24]}
+{"kind":"textbox","id":"sh/8vu9wnax","slide":3,"text":"immutable raw JSON","textPreview":"immutable raw JSON","textChars":18,"textLines":1,"bbox":[457,315,136,38]}
+{"kind":"shape","id":"sh/7ul83itc","slide":3,"bbox":[605,319,32,0]}
+{"kind":"shape","id":"sh/6tcrudsr","slide":3,"bbox":[640,260,160,118]}
+{"kind":"textbox","id":"sh/ds7a1wbm","slide":3,"text":"Silver","textPreview":"Silver","textChars":6,"textLines":1,"bbox":[654,278,132,24]}
+{"kind":"textbox","id":"sh/sry98rah","slide":3,"text":"validated interval records","textPreview":"validated interval records","textChars":26,"textLines":1,"bbox":[652,315,136,38]}
+{"kind":"shape","id":"sh/w7qlkfmp","slide":3,"bbox":[800,319,32,0]}
+{"kind":"shape","id":"sh/x8z2tk3a","slide":3,"bbox":[835,260,160,118]}
+{"kind":"textbox","id":"sh/a583ip4j","slide":3,"text":"Gold","textPreview":"Gold","textChars":4,"textLines":1,"bbox":[849,278,132,24]}
+{"kind":"textbox","id":"sh/b6hkrul4","slide":3,"text":"usage + operations","textPreview":"usage + operations","textChars":18,"textLines":1,"bbox":[847,315,136,38]}
+{"kind":"shape","id":"sh/o361gfmt","slide":3,"bbox":[995,319,32,0]}
+{"kind":"shape","id":"sh/94f2pk3y","slide":3,"bbox":[1030,260,160,118]}
+{"kind":"textbox","id":"sh/21oje54n","slide":3,"text":"ML","textPreview":"ML","textChars":2,"textLines":1,"bbox":[1044,278,132,24]}
+{"kind":"textbox","id":"sh/n2xkna58","slide":3,"text":"next 15-min forecast","textPreview":"next 15-min forecast","textChars":20,"textLines":1,"bbox":[1042,315,136,38]}
+{"kind":"textbox","id":"sh/0z61cvmh","slide":3,"text":"Every stage is replayable, monitored and independently schedulable.","textPreview":"Every stage is replayable, monitored and independently schedulable.","textChars":67,"textLines":1,"bbox":[78,472,900,32]}
+{"kind":"shape","id":"sh/10f2l0n2","slide":3,"bbox":[80,525,11,11]}
+{"kind":"textbox","id":"sh/3adkvqpo","slide":3,"text":"Producer: 10,000 detailed events every 15 minutes","textPreview":"Producer: 10,000 detailed events every 15 minutes","textChars":49,"textLines":1,"bbox":[104,518,936,42]}
+{"kind":"shape","id":"sh/i94325oj","slide":3,"bbox":[80,579,11,11]}
+{"kind":"textbox","id":"sh/5cvmx07u","slide":3,"text":"Consumer: batch ingest to Bronze with offset checkpoints","textPreview":"Consumer: batch ingest to Bronze with offset checkpoints","textChars":56,"textLines":1,"bbox":[104,572,936,42]}
+{"kind":"shape","id":"sh/4bml4v69","slide":3,"bbox":[80,633,11,11]}
+{"kind":"textbox","id":"sh/ryx4zap0","slide":3,"text":"Transform + score: serving tables and future forecast interval","textPreview":"Transform + score: serving tables and future forecast interval","textChars":62,"textLines":1,"bbox":[104,626,936,42]}
+{"kind":"textbox","id":"sh/qx4365of","slide":3,"text":"Bronze preserves evidence; Silver makes it trustworthy; Gold and ML make it useful.","textPreview":"Bronze preserves evidence; Silver makes it trustworthy; Gold and ML make it useful.","textChars":83,"textLines":1,"bbox":[56,675,1000,18]}
+{"kind":"notes","id":"nt/uq3cip","slide":3,"text":""}
+{"kind":"slide","id":"sl/xsdoi6","slide":4,"title":"SMART METER STREAMING","textShapes":13}
+{"kind":"textbox","id":"sh/bq58r61o","slide":4,"text":"SMART METER STREAMING","textPreview":"SMART METER STREAMING","textChars":21,"textLines":1,"bbox":[56,35,500,22]}
+{"kind":"textbox","id":"sh/wrepkb29","slide":4,"text":"The data product carries context—not just consumption","textPreview":"The data product carries context—not just consumption","textChars":53,"textLines":1,"bbox":[56,70,1130,54]}
+{"kind":"textbox","id":"sh/xsnqtgju","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1180,38,45,22]}
+{"kind":"shape","id":"sh/ytw7ml0f","slide":4,"bbox":[56,140,1168,0]}
+{"kind":"shape","id":"sh/ju58vq10","slide":4,"bbox":[58,190,545,150]}
+{"kind":"textbox","id":"sh/kvepovil","slide":4,"text":"Electrical","textPreview":"Electrical","textChars":10,"textLines":1,"bbox":[80,210,220,28]}
+{"kind":"textbox","id":"sh/lw7qx0jq","slide":4,"text":"kWh, demand kW, voltage, current, power factor, frequency","textPreview":"kWh, demand kW, voltage, current, power factor, frequency","textChars":57,"textLines":1,"bbox":[80,250,485,62]}
+{"kind":"shape","id":"sh/6xg7ql0b","slide":4,"bbox":[643,190,545,150]}
+{"kind":"textbox","id":"sh/7yp8zq1w","slide":4,"text":"Operational","textPreview":"Operational","textChars":11,"textLines":1,"bbox":[665,210,220,28]}
+{"kind":"textbox","id":"sh/v69obihc","slide":4,"text":"quality code, firmware, meter status, outage minutes, tamper flag","textPreview":"quality code, firmware, meter status, outage minutes, tamper flag","textChars":65,"textLines":1,"bbox":[665,250,485,62]}
+{"kind":"shape","id":"sh/u50n2x0r","slide":4,"bbox":[58,380,545,150]}
+{"kind":"textbox","id":"sh/h8r6dszi","slide":4,"text":"Network","textPreview":"Network","textChars":7,"textLines":1,"bbox":[80,400,220,28]}
+{"kind":"textbox","id":"sh/g7i54nix","slide":4,"text":"region, feeder, transformer, service point and tariff","textPreview":"region, feeder, transformer, service point and tariff","textChars":53,"textLines":1,"bbox":[80,440,485,62]}
+{"kind":"shape","id":"sh/72p47ihg","slide":4,"bbox":[643,380,545,150]}
+{"kind":"textbox","id":"sh/6hgnyd0v","slide":4,"text":"Customer","textPreview":"Customer","textChars":8,"textLines":1,"bbox":[665,400,220,28]}
+{"kind":"textbox","id":"sh/t4rm9sz6","slide":4,"text":"residential, small business, industrial segment","textPreview":"residential, small business, industrial segment","textChars":47,"textLines":1,"bbox":[665,440,485,62]}
+{"kind":"textbox","id":"sh/83i50ni1","slide":4,"text":"This context enables operations, commercial and customer-service use cases from the same event stream.","textPreview":"This context enables operations, commercial and customer-service use cases from the same event stream.","textChars":102,"textLines":1,"bbox":[64,600,1080,35]}
+{"kind":"textbox","id":"sh/rytoj2hk","slide":4,"text":"Schema v2: granular meter, network and customer attributes.","textPreview":"Schema v2: granular meter, network and customer attributes.","textChars":59,"textLines":1,"bbox":[56,675,1000,18]}
+{"kind":"notes","id":"nt/xsdoi6","slide":4,"text":""}
+{"kind":"slide","id":"sl/3n3pk1","slide":5,"title":"SMART METER STREAMING","textShapes":14}
+{"kind":"textbox","id":"sh/kfqlkfap","slide":5,"text":"SMART METER STREAMING","textPreview":"SMART METER STREAMING","textChars":21,"textLines":1,"bbox":[56,35,500,22]}
+{"kind":"textbox","id":"sh/jehkba94","slide":5,"text":"The same platform serves multiple utility decisions","textPreview":"The same platform serves multiple utility decisions","textChars":51,"textLines":1,"bbox":[56,70,1130,54]}
+{"kind":"textbox","id":"sh/id83i5sz","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1180,38,45,22]}
+{"kind":"shape","id":"sh/xcz290re","slide":5,"bbox":[56,140,1168,0]}
+{"kind":"shape","id":"sh/wbqlgvat","slide":5,"bbox":[70,170,1140,64]}
+{"kind":"textbox","id":"sh/vahk7q98","slide":5,"text":"Network operations","textPreview":"Network operations","textChars":18,"textLines":1,"bbox":[92,188,280,25]}
+{"kind":"textbox","id":"sh/a983elsn","slide":5,"text":"Spot demand peaks by feeder or transformer; prioritize investigation.","textPreview":"Spot demand peaks by feeder or transformer; prioritize investigation.","textChars":69,"textLines":1,"bbox":[400,185,770,30]}
+{"kind":"shape","id":"sh/h83ml4ri","slide":5,"bbox":[70,255,1140,64]}
+{"kind":"textbox","id":"sh/g7alszax","slide":5,"text":"Customer programs","textPreview":"Customer programs","textChars":17,"textLines":1,"bbox":[92,273,280,25]}
+{"kind":"textbox","id":"sh/qxcvqtsf","slide":5,"text":"Identify consumption patterns by segment; target tariffs and energy advice.","textPreview":"Identify consumption patterns by segment; target tariffs and energy advice.","textChars":75,"textLines":1,"bbox":[400,270,770,30]}
+{"kind":"shape","id":"sh/rylwjy90","slide":5,"bbox":[70,340,1140,64]}
+{"kind":"textbox","id":"sh/czuds3al","slide":5,"text":"Revenue assurance","textPreview":"Revenue assurance","textChars":17,"textLines":1,"bbox":[92,358,280,25]}
+{"kind":"textbox","id":"sh/d03el8r6","slide":5,"text":"Surface tamper signals, suspect readings and unusual interval behavior.","textPreview":"Surface tamper signals, suspect readings and unusual interval behavior.","textChars":71,"textLines":1,"bbox":[400,355,770,30]}
+{"kind":"shape","id":"sh/29svmtsj","slide":5,"bbox":[70,425,1140,64]}
+{"kind":"textbox","id":"sh/3u1wfy94","slide":5,"text":"Reliability teams","textPreview":"Reliability teams","textChars":17,"textLines":1,"bbox":[92,443,280,25]}
+{"kind":"textbox","id":"sh/4vado3ap","slide":5,"text":"Combine outage indicators and meter status for faster triage.","textPreview":"Combine outage indicators and meter status for faster triage.","textChars":61,"textLines":1,"bbox":[400,440,770,30]}
+{"kind":"shape","id":"sh/pw3ehora","slide":5,"bbox":[70,510,1140,64]}
+{"kind":"textbox","id":"sh/m5wvydsn","slide":5,"text":"Planning & forecasting","textPreview":"Planning & forecasting","textChars":22,"textLines":1,"bbox":[92,528,280,25]}
+{"kind":"textbox","id":"sh/nq5wri98","slide":5,"text":"Use next-interval forecasts to support dispatch and capacity planning.","textPreview":"Use next-interval forecasts to support dispatch and capacity planning.","textChars":70,"textLines":1,"bbox":[400,525,770,30]}
+{"kind":"textbox","id":"sh/jydk3qlo","slide":5,"text":"Start with one decision workflow; scale the common data product across teams.","textPreview":"Start with one decision workflow; scale the common data product across teams.","textChars":77,"textLines":1,"bbox":[56,675,1000,18]}
+{"kind":"notes","id":"nt/3n3pk1","slide":5,"text":""}
+{"kind":"slide","id":"sl/d5u6gn","slide":6,"title":"SMART METER STREAMING","textShapes":15}
+{"kind":"textbox","id":"sh/1g3alkvm","slide":6,"text":"SMART METER STREAMING","textPreview":"SMART METER STREAMING","textChars":21,"textLines":1,"bbox":[56,35,500,22]}
+{"kind":"textbox","id":"sh/etcbq5cb","slide":6,"text":"Benefits are delivered through faster visibility, better quality and repeatable automation","textPreview":"Benefits are delivered through faster visibility, better quality and repeatable automation","textChars":90,"textLines":1,"bbox":[56,70,1130,54]}
+{"kind":"textbox","id":"sh/fulsjadw","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1180,38,45,22]}
+{"kind":"shape","id":"sh/ojetwzud","slide":6,"bbox":[56,140,1168,0]}
+{"kind":"shape","id":"sh/pknup4vy","slide":6,"bbox":[65,205,260,155]}
+{"kind":"textbox","id":"sh/2hcbupc7","slide":6,"text":"DATA LATENCY","textPreview":"DATA LATENCY","textChars":12,"textLines":1,"bbox":[85,228,220,22]}
+{"kind":"textbox","id":"sh/3i5cnuds","slide":6,"text":"15-min","textPreview":"15-min","textChars":6,"textLines":1,"bbox":[85,263,220,50]}
+{"kind":"shape","id":"sh/cnet0zu9","slide":6,"bbox":[350,205,260,155]}
+{"kind":"textbox","id":"sh/donut4vu","slide":6,"text":"FLEET COVERAGE","textPreview":"FLEET COVERAGE","textChars":14,"textLines":1,"bbox":[370,228,220,22]}
+{"kind":"textbox","id":"sh/d03yxcry","slide":6,"text":"10,000 meters","textPreview":"10,000 meters","textChars":13,"textLines":1,"bbox":[370,263,220,50]}
+{"kind":"shape","id":"sh/szax47qd","slide":6,"bbox":[635,205,260,155]}
+{"kind":"textbox","id":"sh/ry1gv29s","slide":6,"text":"FORECAST HORIZON","textPreview":"FORECAST HORIZON","textChars":16,"textLines":1,"bbox":[655,228,220,22]}
+{"kind":"textbox","id":"sh/qxsf2x87","slide":6,"text":"next 15 min","textPreview":"next 15 min","textChars":11,"textLines":1,"bbox":[655,263,220,50]}
+{"kind":"shape","id":"sh/143y1c7u","slide":6,"bbox":[920,205,260,155]}
+{"kind":"textbox","id":"sh/03uh87q9","slide":6,"text":"DATA PATH","textPreview":"DATA PATH","textChars":9,"textLines":1,"bbox":[940,228,220,22]}
+{"kind":"textbox","id":"sh/f2lgzmpo","slide":6,"text":"raw → ML","textPreview":"raw → ML","textChars":8,"textLines":1,"bbox":[940,263,220,50]}
+{"kind":"shape","id":"sh/e1cz6h83","slide":6,"bbox":[80,450,11,11]}
+{"kind":"textbox","id":"sh/h8jypsrq","slide":6,"text":"Operations receive a live, governed view instead of reconciling disconnected extracts.","textPreview":"Operations receive a live, governed view instead of reconciling disconnected extracts.","textChars":86,"textLines":1,"bbox":[104,443,1006,42]}
+{"kind":"shape","id":"sh/g7qxwnq5","slide":6,"bbox":[80,504,11,11]}
+{"kind":"textbox","id":"sh/8ruhcny1","slide":6,"text":"Data engineering gains replayability, raw evidence and checkpointed consumption.","textPreview":"Data engineering gains replayability, raw evidence and checkpointed consumption.","textChars":80,"textLines":1,"bbox":[104,497,1006,42]}
+{"kind":"shape","id":"sh/9c3ylszm","slide":6,"bbox":[80,558,11,11]}
+{"kind":"textbox","id":"sh/mpcfadgv","slide":6,"text":"Business teams gain a segment-aware forecast and an auditable route back to source events.","textPreview":"Business teams gain a segment-aware forecast and an auditable route back to source events.","textChars":90,"textLines":1,"bbox":[104,551,1006,42]}
+{"kind":"textbox","id":"sh/7qlgjihg","slide":6,"text":"Benefits should be measured against agreed operational baselines during pilot.","textPreview":"Benefits should be measured against agreed operational baselines during pilot.","textChars":78,"textLines":1,"bbox":[56,675,1000,18]}
+{"kind":"notes","id":"nt/d5u6gn","slide":6,"text":""}
+{"kind":"slide","id":"sl/el3vdc","slide":7,"title":"SMART METER STREAMING","textShapes":20}
+{"kind":"textbox","id":"sh/twjq9s7i","slide":7,"text":"SMART METER STREAMING","textPreview":"SMART METER STREAMING","textChars":21,"textLines":1,"bbox":[56,35,500,22]}
+{"kind":"textbox","id":"sh/6t8rexo7","slide":7,"text":"The demo proves the end-to-end journey—not isolated components","textPreview":"The demo proves the end-to-end journey—not isolated components","textChars":62,"textLines":1,"bbox":[56,70,1130,54]}
+{"kind":"textbox","id":"sh/7uh87ipc","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1180,38,45,22]}
+{"kind":"shape","id":"sh/gza9k769","slide":7,"bbox":[56,140,1168,0]}
+{"kind":"shape","id":"sh/1kjqdc7u","slide":7,"bbox":[70,220,54,54]}
+{"kind":"textbox","id":"sh/uxsrixo3","slide":7,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[70,231,54,22]}
+{"kind":"textbox","id":"sh/fy18b2po","slide":7,"text":"Publish","textPreview":"Publish","textChars":7,"textLines":1,"bbox":[70,300,180,24]}
+{"kind":"textbox","id":"sh/onu9o765","slide":7,"text":"10,000 meter events","textPreview":"10,000 meter events","textChars":19,"textLines":1,"bbox":[70,336,185,50]}
+{"kind":"shape","id":"sh/po3ahc7q","slide":7,"bbox":[126,247,159,0]}
+{"kind":"shape","id":"sh/tcvi5cf2","slide":7,"bbox":[300,220,54,54]}
+{"kind":"textbox","id":"sh/8bmhc7yh","slide":7,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[300,231,54,22]}
+{"kind":"textbox","id":"sh/7at032xw","slide":7,"text":"Ingest","textPreview":"Ingest","textChars":6,"textLines":1,"bbox":[300,300,180,24]}
+{"kind":"textbox","id":"sh/69kzaxgb","slide":7,"text":"Bronze raw events","textPreview":"Bronze raw events","textChars":17,"textLines":1,"bbox":[300,336,185,50]}
+{"kind":"shape","id":"sh/hgvi9cfy","slide":7,"bbox":[356,247,159,0]}
+{"kind":"shape","id":"sh/gfmhgryt","slide":7,"bbox":[530,220,54,54]}
+{"kind":"textbox","id":"sh/ved07mx8","slide":7,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[530,231,54,22]}
+{"kind":"textbox","id":"sh/ud4zehgn","slide":7,"text":"Refine","textPreview":"Refine","textChars":6,"textLines":1,"bbox":[530,300,180,24]}
+{"kind":"textbox","id":"sh/xkbyxsfu","slide":7,"text":"Silver + Gold tables","textPreview":"Silver + Gold tables","textChars":20,"textLines":1,"bbox":[530,336,185,50]}
+{"kind":"shape","id":"sh/wjih4ny9","slide":7,"bbox":[586,247,159,0]}
+{"kind":"shape","id":"sh/oz690rah","slide":7,"bbox":[760,220,54,54]}
+{"kind":"textbox","id":"sh/90fq9wb2","slide":7,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[760,231,54,22]}
+{"kind":"textbox","id":"sh/mxoryhsb","slide":7,"text":"Predict","textPreview":"Predict","textChars":7,"textLines":1,"bbox":[760,300,180,24]}
+{"kind":"textbox","id":"sh/nyx87mtw","slide":7,"text":"10,000 future forecasts","textPreview":"10,000 future forecasts","textChars":23,"textLines":1,"bbox":[760,336,185,50]}
+{"kind":"shape","id":"sh/w3q94rad","slide":7,"bbox":[816,247,159,0]}
+{"kind":"shape","id":"sh/x4zqdwry","slide":7,"bbox":[990,220,54,54]}
+{"kind":"textbox","id":"sh/a1or21sn","slide":7,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[990,231,54,22]}
+{"kind":"textbox","id":"sh/b2h8bm9s","slide":7,"text":"Observe","textPreview":"Observe","textChars":7,"textLines":1,"bbox":[990,300,180,24]}
+{"kind":"textbox","id":"sh/k7q98bap","slide":7,"text":"live layer reports","textPreview":"live layer reports","textChars":18,"textLines":1,"bbox":[990,336,185,50]}
+{"kind":"shape","id":"sh/l8zahgra","slide":7,"bbox":[90,480,1100,94]}
+{"kind":"textbox","id":"sh/v2lc7atc","slide":7,"text":"Suggested live proof point: show an incoming raw event, its validated Silver record, its Gold aggregate, then the forecast for the next interval.","textPreview":"Suggested live proof point: show an incoming raw event, its validated Silver record, its Gold aggregate, then the forecast for the next i...","textChars":145,"textLines":1,"bbox":[120,505,1040,42]}
+{"kind":"textbox","id":"sh/u1sby5cr","slide":7,"text":"Use the dashboard as the narrative bridge between technical flow and business outcome.","textPreview":"Use the dashboard as the narrative bridge between technical flow and business outcome.","textChars":86,"textLines":1,"bbox":[56,675,1000,18]}
+{"kind":"notes","id":"nt/el3vdc","slide":7,"text":""}
+{"kind":"slide","id":"sl/b3jx48","slide":8,"title":"SMART METER STREAMING","textShapes":11}
+{"kind":"textbox","id":"sh/lwfi5ozu","slide":8,"text":"SMART METER STREAMING","textPreview":"SMART METER STREAMING","textChars":21,"textLines":1,"bbox":[56,35,500,22]}
+{"kind":"textbox","id":"sh/yt4za903","slide":8,"text":"A focused pilot can turn this demo into a measurable operating capability","textPreview":"A focused pilot can turn this demo into a measurable operating capability","textChars":73,"textLines":1,"bbox":[56,70,1130,54]}
+{"kind":"textbox","id":"sh/zud03eho","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1180,38,45,22]}
+{"kind":"shape","id":"sh/c7mh8zix","slide":8,"bbox":[56,140,1168,0]}
+{"kind":"textbox","id":"sh/dsvi14zi","slide":8,"text":"Recommended next step","textPreview":"Recommended next step","textChars":21,"textLines":1,"bbox":[64,190,500,36]}
+{"kind":"shape","id":"sh/q54z6907","slide":8,"bbox":[70,260,11,11]}
+{"kind":"textbox","id":"sh/b6d0zehs","slide":8,"text":"Select a representative meter cohort and one operational decision to improve.","textPreview":"Select a representative meter cohort and one operational decision to improve.","textChars":77,"textLines":1,"bbox":[94,253,826,42]}
+{"kind":"shape","id":"sh/o32h4zi1","slide":8,"bbox":[70,314,11,11]}
+{"kind":"textbox","id":"sh/p4vix4zm","slide":8,"text":"Agree success measures: data freshness, completeness, forecast error and response time.","textPreview":"Agree success measures: data freshness, completeness, forecast error and response time.","textChars":87,"textLines":1,"bbox":[94,307,826,42]}
+{"kind":"shape","id":"sh/twzepo7u","slide":8,"bbox":[70,368,11,11]}
+{"kind":"textbox","id":"sh/svqdgjq9","slide":8,"text":"Connect the production stream, schedule the pipeline and establish operating ownership.","textPreview":"Connect the production stream, schedule the pipeline and establish operating ownership.","textChars":87,"textLines":1,"bbox":[94,361,826,42]}
+{"kind":"shape","id":"sh/7uhwnepo","slide":8,"bbox":[860,220,290,260]}
+{"kind":"textbox","id":"sh/6t8ve983","slide":8,"text":"Decision ask","textPreview":"Decision ask","textChars":12,"textLines":1,"bbox":[890,250,220,28]}
+{"kind":"textbox","id":"sh/5szel47y","slide":8,"text":"Approve a targeted pilot to validate value with real meter data.","textPreview":"Approve a targeted pilot to validate value with real meter data.","textChars":64,"textLines":1,"bbox":[885,305,230,90]}
+{"kind":"textbox","id":"sh/krqdczqd","slide":8,"text":"Built to scale from demo to governed production.","textPreview":"Built to scale from demo to governed production.","textChars":48,"textLines":1,"bbox":[80,590,920,34]}
+{"kind":"textbox","id":"sh/jqxwjeps","slide":8,"text":"Thank you","textPreview":"Thank you","textChars":9,"textLines":1,"bbox":[56,675,1000,18]}
+{"kind":"notes","id":"nt/b3jx48","slide":8,"text":""}
